@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightblue;
+            padding: 20px;
+            width: 70%;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(77, 1, 52);
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>TASKS</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="SAVE">
+    </form>
+</body>
+</html>

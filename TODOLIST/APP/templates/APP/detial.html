@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(77, 1, 52);
+
+        }
+        div{
+            background-color: burlywood;
+            padding: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>TASK VIEW</h1>
+    <br><br>
+    <div>
+    <h3>TASK DESCRIPTION  : {{object.title}}</h3>
+    <h3>TASK TITLE        : {{object.des}}</h3>
+    <h3>TASK CREATED DATE : {{object.created}}</h3>
+    <h3>TASK COMPLETED    : {{object.complete}}</h3>
+    <a href="/">GO BACK</a>
+</div>
+</body>
+</html>
